@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Manrope', sans-serif;
+  background-color: #ffffff;
+  padding: 60px 24px 40px;
+}
+
+/* ── Container ── */
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+/* ── Heading ── */
+h1 {
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+  font-weight: 800;
+  color: #111827;
+  text-align: center;
+  line-height: 1.2;
+  margin-bottom: 28px;
+}
+
+/* ── Separator ── */
+.separator {
+  display: block;
+  margin: 0 auto 48px;
+}
+
+/* ── Articles ── */
+.articles {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* ── Article card ── */
+.article-card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.article-img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.article-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+}
+
+h2 {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  font-weight: 700;
+  color: #111827;
+  line-height: 1.4;
+}
+
+.date {
+  font-size: 0.875rem;
+  color: #6B7280;
+}
+
+/* ── Author ── */
+.author-info {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 48px;
+  color: rgb(55, 65, 81);
+}
+
+.author-info a {
+  text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 40px 20px 32px;
+  }
+
+  .article-card {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .article-img {
+    width: 100%;
+    height: 200px;
+  }
+}
